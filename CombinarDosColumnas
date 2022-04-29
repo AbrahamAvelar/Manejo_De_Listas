@@ -1,0 +1,6 @@
+def CombinarDosColumnas(a,b):
+    a = a.fillna(0)
+    b = b.fillna(0)
+    c = a+b
+    c.replace(0, np.nan)
+    return c
